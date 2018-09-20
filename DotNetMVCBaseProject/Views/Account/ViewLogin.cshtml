@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "ViewLogin";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("CheckLogin", "Account"))
+{
+    <h3>@ViewBag.Message</h3>
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+
+            <div class="col-md-10">
+                <text class="control-label">Login</text> <input name="username" class="form-control">
+                <text class="control-label">Password</text> <input type="password" name="password" class="form-control">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Summit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
